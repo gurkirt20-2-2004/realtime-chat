@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Mini Real-Time Chat Application using WebSockets">
+    <title>Mini Real-Time Chat</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main id="container" role="main">
+        <header>
+            <h1>Mini Real-Time Chat </h1>
+            <p class="subtitle">Chat live with others in real-time using WebSockets</p>
+        </header>
+
+        <section id="chat-box" aria-live="polite" aria-label="Chat messages">
+            <!-- Messages will appear here -->
+        </section>
+
+        <form id="chat-form" aria-label="Send a message">
+            <input
+                type="text"
+                id="message-input"
+                placeholder="Type your message and hit Send..."
+                aria-label="Message input"
+                autocomplete="off"
+                required
+            />
+            <button type="submit" id="send-btn" aria-label="Send message">Send</button>
+        </form>
+
+        <footer>
+            <p>Made for Internship Task 2: Real-Time Chat Application</p>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
